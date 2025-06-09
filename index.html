@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FotoForFun</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exile&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Ready? Smile! Click!!</h1>
+        <video id="video" width="1200" height="640" autoplay></video>
+        <button onclick="toggleMirror()">Invert</button>
+        <h3>Choose the effect</h3>
+        <select>
+            <option>Choose</option>
+            <option id="bnw">Black and White</option>
+            <option id="contrast">Contrast</option>
+            <option>Sepia</option>
+            <option>x</option>
+            <option>y</option>
+        </select>
+        <button onclick="capture()">Capture!</button>
+    </div>
+
+    <div>
+        <h1>Preview</h1>
+        <canvas id="canvas" width="800" height="640" style="display:none;"></canvas>
+        <img id="photo" />
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

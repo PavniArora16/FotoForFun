@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Exile&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Savate:ital,wght@0,200..900;1,200..900&display=swap');
+
+h1 {
+  text-shadow: 2px 2px white;
+  font-family: "Exile", system-ui, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 50px ;
+  word-spacing: 10px ;
+}
+
+body {
+  text-align: center;
+  background-image: url("https://previews.123rf.com/images/flas100/flas1001404/flas100140400063/27488633-grunge-old-motion-picture-film-reel-with-film-strip-vintage-background.jpg");
+}
+
+button{
+  font-family: "Savate", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 40px;
+  font-style: normal;
+}
+
+
+button:hover {
+  background-color: #999071;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  background-color: #c9bd91;
+}
+
+
+button:active {
+  background-color: #999071;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
