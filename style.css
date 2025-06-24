@@ -1,34 +1,134 @@
 @import url('https://fonts.googleapis.com/css2?family=Exile&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Savate:ital,wght@0,200..900;1,200..900&display=swap');
 .container{
-    margin: auto;
+  margin: auto;
+  width: 1000px;
 }
-.effect{
-    text-align: center;
-}
-h1,h3 {
+/* .effect{
+  text-align: center;
+} */
+h1 {
   font-family: "Savate", sans-serif;
   font-optical-sizing: auto;
   font-weight: 10px;
   font-style: normal;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
+
 body{
-    text-align: center;
-    background: radial-gradient(#999071,#c9bd91);
+  text-align: center;
+  background: radial-gradient(#999071,#c9bd91);
 }
+
+video {
+  width: 80vw;      /* full screen width */
+  height: 600px;     /* fixed height */
+  border-radius: 15px;
+  object-fit: cover; /* ensures it doesn't look stretched */
+  display: block;
+  margin: 0 auto;
+}
+
 button{
   font-family: "Savate", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 40px;
+  font-weight: 80px;
   font-style: normal;
 }
 
-
-button:hover {
-  background-color: #999071;
+#capture{
+  position: absolute;
+  top: 615px;
+  left: 540px;
+  height: 40px;
+  width: 200px;
+  background-color: black;
+  color: #999071;
+}
+#capture:hover {
+  /* background-color: #999071; */
+  cursor: pointer;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
-video{
-    border-radius: 15px;
+
+#invert{
+  position: absolute;
+  top:5px;
+  left:120px;
+  background-color: transparent;
+  border: none;
+}
+#invertImg{
+  height: 100px;
+  width: 100px;
+}
+
+#newbl{
+  /*button left*/
+  /* position: absolute;
+  top: 530px;
+  left: 300px; */
+  background-color: transparent;
+  border: none;
+  position: static;
+}
+#bul{
+  /*image of button left*/
+  width: 60px;
+  height: 60px;
+}
+
+#text-bar {
+  min-width: 200px;
+  font-size: 18px;
+  border: black;
+  /* position: absolute;
+  top: 530px;
+  left: 700px;  */
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background:#999071;
+  padding: 10px 20px;
+  position: absolute;
+  top: 500px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+}
+
+#newbr{
+  /*button right*/
+  /* position: absolute;
+  top: 530px;
+  left: 900px; */
+  background-color: transparent;
+  border: none;
+  position: static;
+}
+#bur{
+  /*image of button right*/
+  width: 60px;
+  height: 60px;
+  transform: rotate(180deg);
+}
+
+#timer{
+  position: absolute;
+  top: 7px;
+  left: 1070px;
+  background-color: transparent;
+  border: none;
+}
+#clock{
+  height: 80px;
+  width: 80px;
 }
