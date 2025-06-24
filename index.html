@@ -6,31 +6,53 @@
     <title>FotoForFun</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Exile&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exile&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="container">
         <h1>Ready? Smile! Click!!</h1>
-        <video id="video" width="1200" height="640" autoplay></video>
-        <button onclick="toggleMirror()">Invert</button>
-        <h3>Choose the effect</h3>
-        <select>
+        <video id="video" autoplay></video>
+        
+        <button id="invert"onclick="toggleMirror()">
+            <img id="invertImg" src="invert.png" alt="invert">
+        </button>
+        <!-- <h3>Choose the effect</h3> -->
+        <!-- <select>
             <option>Choose</option>
             <option id="bnw">Black and White</option>
             <option id="contrast">Contrast</option>
             <option>Sepia</option>
             <option>x</option>
             <option>y</option>
-        </select>
-        <button onclick="capture()">Capture!</button>
+        </select> -->
+
+        <div class="controls">
+
+            <button  onclick = "prevText()" id="newbl">
+                <img id="bul" src="button.png" alt="bleft">
+            </button>
+
+            <div id="text-bar">Choose Filters</div>
+
+            <button onclick="nextText()" id="newbr">
+                <img id="bur" src="button.png" alt="bright">
+            </button>
+
+        </div>
+
+        <button id= "capture" onclick="capture()">Capture!</button>
     </div>
 
-    <div>
-        <h1>Preview</h1>
-        <canvas id="canvas" width="800" height="640" style="display:none;"></canvas>
-        <img id="photo" />
+    <button id="timer">
+        <img id = "clock" src="clock.png" alt="clock">
+    </button>
+
+        <div>
+        <canvas id="canvas" width="250" height="250" ></canvas>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
