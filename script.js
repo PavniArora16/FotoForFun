@@ -23,3 +23,26 @@ function capture() {
   const imageData = canvas.toDataURL('image/png');
   photo.src = imageData;
 }
+
+const filters = [
+  "Black and White",
+  "Old Photograph",
+  "Sepia",
+  "Mirror"
+];
+
+let index = 0;
+
+function showText() {
+  document.getElementById("text-bar").textContent = filters[index];
+}
+
+function nextText() {
+  index = (index + 1) % filters.length;
+  showText();
+}
+
+function prevText() {
+  index = (index - 1 + filters.length) % filters.length;
+  showText();
+}
